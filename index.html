@@ -14,9 +14,9 @@
   </head>
   <body>
     <div class="min-h-screen">
-      <section>
+      <section aria-label="navbar" class="sticky top-0">
         <!-- header  1st -->
-        <nav class="bg-gray-800 flex items-center justify-center">
+        <nav class="bg-gray-800 flex items-center justify-center ">
           <!-- left -->
           <div class="flex items-center gap-2">
             <img
@@ -91,15 +91,11 @@
             </div>
           </div>
         </nav>
+        </section>
+        <main>
         <!-- header 2nd -->
-        <div class="bg-gray-900 w-full h-8">
-          <marquee
-            behavior="alternate"
-            direction="left"
-            scrollamount="10"
-            class="text-white mt-1"
-            >For Educational Purpose</marquee
-          >
+        <div class="bg-gray-900 w-full h-8 text-center flex items-center justify-center text-slate-300">
+          VS Code Clone Project is created for educational purpose only.
         </div>
         <!-- Jumbotron -->
         <div>
@@ -185,7 +181,7 @@
             </div>
           </div>
         </div>
-      </section>
+      
 
       <!----------------------------- icons  ------------------->
       <section
@@ -276,7 +272,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="w-6 h-6 hover:text-sky-400"
           >
             <path
               stroke-linecap="round"
@@ -353,7 +349,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="w-6 h-6 hover:text-sky-400"
           >
             <path
               stroke-linecap="round"
@@ -363,6 +359,257 @@
           </svg>
         </div>
       </section>
+      <!--------- Features section ---------->
+      <section>
+        <div class="flex justify-center h-70 p-20 w-full gap-24">
+          <img
+            src="./aseets/images/home-intellisense.svg"
+            alt=""
+          />
+          <div class="flex flex-col">
+            <h1 class="font-extralight text-2xl mb-8">Meet IntelliSense.</h1>
+            <p class="font-light text-sm leading-8">
+              Go beyond syntax highlighting and autocomplete with IntelliSense,
+              which <br />
+              provides smart completions based on variable types, function
+              definitions, and <br />
+              imported modules.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center h-70 p-20 w-full bg-zinc-100 gap-24">
+          <div class="flex flex-col">
+            <h1 class="font-extralight text-2xl mb-8">
+              Print statement debugging is a thing of the past.
+            </h1>
+            <p class="font-light text-sm leading-8">
+              Debug code right from the editor. Launch or attach to your running
+              apps and <br />
+              debug with break points, call stacks, and an interactive console.
+            </p>
+          </div>
+          <img src="./aseets/images/home-debug.svg" alt="debug" />
+        </div>
+
+        <div class="flex justify-center h-70 p-20 w-full gap-24">
+          <img src="./aseets/images/home-git.svg" alt="" />
+          <div class="flex flex-col">
+            <h1 class="font-extralight text-2xl mb-8">
+              Git commands built-in.
+            </h1>
+            <p class="font-light text-sm leading-8">
+              Working with Git and other SCM providers has never been easier.
+              Review diffs, <br />
+              stage files, and make commits right from the editor. Push and pull
+              from any <br />
+              hosted SCM service.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center h-70 p-20 w-full bg-zinc-100 gap-24">
+          <div class="flex flex-col">
+            <h1 class="font-extralight text-2xl mb-8">
+              Extensible and customizable
+            </h1>
+            <p class="font-light text-sm leading-8">
+              Want even more features? Install extensions to add new languages,
+              themes, <br />
+              debuggers, and to connect to additional services. Extensions run
+              in separate <br />
+              processes, ensuring they won't slow down your editor.
+              <a href="#" class="text-sky-800 hover:underline">
+                Learn more about <br />
+                extensions.</a
+              >
+            </p>
+          </div>
+          <img
+            src="./aseets/images/Hundreds-of-Extensions.png"
+            alt="Hundreds-of-Extensions"
+            class=" h-70 w-72 hover:transition ease-out duration-1000 hover:scale-110"
+          />
+        </div>
+
+        <div class="flex justify-center h-70 p-20 w-full gap-24">
+          <img
+            src="./aseets/images/home-deploy.svg"
+            alt="deploy"
+          />
+          <div class="flex flex-col">
+            <h1 class="font-extralight text-2xl mb-8"">Deploy with confidence and ease</h1>
+            <p class="font-light text-sm leading-8">
+              With <a href="#" class="text-sky-800 hover:underline">Microsoft Azure</a>  you can deploy and host your React, Angular, Vue, Node, <br> 
+              Python (and more!) sites, store and query relational and document based data, <br> 
+              and scale with serverless computing, all with ease, <a href="#" class="text-sky-800 hover:underline" >all from within VS Code.</a> 
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center  h-70 w-full p-20 bg-zinc-100 ">
+         
+          <div class="flex flex-col">
+            <h1 class="mb-5 text-center text-2xl font-extralight ">VS Code for</h1>
+
+            <div class="grid grid-cols-6 gap-8 items-center text-sm font-light mb-5">
+             <div class="flex"><img src="./aseets/icons/javascript.svg" alt="javascript">JavaScript</div>  
+              <div class="flex"><img src="./aseets/icons/python.svg" alt="python">Python</div>
+              <div class="flex"> <img src="./aseets/icons/java.svg" alt="java">Java</div>
+              <div class="flex"><img src="./aseets/icons/markdown.svg" alt="markdown">Markdown</div>
+              <div class="flex"><img src="./aseets/icons/typescript.svg" alt="typescript">Typescript</div>
+              <div class="flex"><img src="./aseets/icons/cpp.svg" alt="c++">C/C++</div>
+            </div>
+
+            <div class="grid grid-cols-6 gap-8 items-center text-sm font-light mb-5">
+              <div class="flex"><img src="./aseets/icons/json.svg" alt="json">JSON</div>
+              <div class="flex"><img src="./aseets/icons/powershell.svg" alt="">Powershell</div>
+              <div class="flex"><img src="./aseets/icons/html.svg" alt="html/css">HTML/CSS</div>
+              <div class="flex"><img src="./aseets/icons/csharp.svg" alt="csharp">C#</div>
+              <div class="flex"><img src="./aseets/icons/php.svg" alt="php">PHP</div>
+              <div class="flex"><img src="./aseets/icons/yaml.svg" alt="YAML">YAML</div>
+            </div>
+            <div class="flex justify-center mb-10"> <p class="text-sm text-sky-800 hover:underline cursor-pointer">and many more languages on the Marketplace...</p></div>
+            <button><input type="button" value="Get Started Now" class="bg-blue-600 py-3 px-6 text-white hover:bg-blue-700"></button>
+        </div>
+      </section>
+
+      <section class="flex flex-row justify-center items-center p-20 h-70 gap-16">
+        <div class="py-[50px] flex flex-col items-center gap-1 mb-[55px]">
+          <img class="h-[120px] mb-4" src="./aseets/images/windows_new.png" alt="windows-image">
+          <button type="button" class="px-[80px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
+            <i class="fa-solid fa-download"></i>
+            Windows<br>
+            <p class="text-xs mt-2">Windows 8, 10, 11</p>
+          </button>
+          <table class="win-downloads">
+            <tbody>
+              <tr>
+                <td>User Installer</td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x86</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm64</a>
+                </td>
+              </tr>
+              <tr>
+                <td>System Installer</td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x86</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm64</a>
+                </td>
+              </tr>
+              <tr>
+                <td>.zip</td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x86</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm64</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="py-[40px] flex flex-col items-center gap-6 mb-[7px]">
+          <img class="h-[100px] w-[100px] mt-5" src="./aseets/images/Ubuntu.png" alt="windows image">
+          <div class="flex flex-row gap-1">
+            <button type="button" class="px-[30px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
+              <i class="fa-solid fa-download"></i>
+              .deb<br>
+              <p class="text-xs mt-2">Debian, Ubuntu</p>
+            </button>
+            <button type="button" class="px-[10px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
+              <i class="fa-solid fa-download"></i>
+              .rpm<br>
+              <p class="text-xs mt-2">Red Hat, Fedora, SUSE</p>
+            </button>
+          </div>
+          <table class="linux-downloads">
+            <tbody>
+              <tr>
+                <td>.deb</td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm32</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm64</a>
+                </td>
+              </tr>
+              <tr>
+                <td>.rpm</td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm32</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm64</a>
+                </td>
+              </tr>
+              <tr>
+                <td>.tar.gz</td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm32</a>
+                </td>
+                <td>
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Arm64</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Snap</td>
+                <td class="snap-button" colspan="3">
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Snap Store</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="py-[20px] flex flex-col items-center gap-4 mb-[90px]">
+          <img class="h-[107px] w-[107px]" src="./aseets/images/icons8-apple-logo-100.png" alt="windows image">
+          <button type="button" class="px-[80px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
+            <i class="fa-solid fa-download"></i>
+            Mac<br>
+            <p class="text-xs mt-2">macOS 10.11+</p>
+          </button>
+          <table class="mac-downloads">
+            <tbody>
+              <tr>
+                <td>.zip</td>
+                <td colspan="2" style="padding-left: 3px">
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Universal</a>
+                </td>
+                <td colspan="2" style="padding-left: 3px">
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Intel chip</a>
+                </td>
+                <td colspan="4" style="padding-left: 3px">
+                  <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Apple silicon</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
     </div>
   </body>
 </html>
