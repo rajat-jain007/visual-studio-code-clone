@@ -189,7 +189,7 @@
         aria-label="icons"
         class="flex flex-row justify-center space-x-16 mt-4 mb-7"
       >
-        <div class="w-40 h-20 flex-col justify-center hover:text-sky-700">
+        <div class="w-40 h-20 flex-col justify-center hover:text-sky-700 hover:bg-zinc-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -206,14 +206,14 @@
           </svg>
           <span class="ml-10">IntelliSense</span>
         </div>
-        <div class="w-40 h-20 flex-col justify-center hover:bg-zinc-300">
+        <div class="w-40 h-20 flex-col justify-center hover:bg-zinc-300 hover:text-sky-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-20 h-14 ml-12 hover:text-sky-700"
+            class="w-20 h-14 ml-12 "
           >
             <path
               stroke-linecap="round"
@@ -224,9 +224,9 @@
 
           <span class="ml-10">Run & Debug</span>
         </div>
-        <div class="w-40 h-20 flex-col justify-center hover:bg-zinc-300">
+        <div class="w-40 h-20 flex-col justify-center hover:bg-zinc-300 hover:text-red-700">
           <svg
-            class="h-14 w-20 ml-10 hover:text-red-700"
+            class="h-14 w-20 ml-10 "
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -246,9 +246,9 @@
           <span class="ml-10">Built-in Git</span>
         </div>
 
-        <div class="w-40 h-20 flex-col justify-center hover:bg-zinc-300">
+        <div class="w-40 h-20 flex-col justify-center hover:bg-zinc-300 hover:text-sky-700">
           <svg
-            class="h-14 w-20 ml-10 hover:text-sky-700"
+            class="h-14 w-20 ml-10 "
             viewBox="0 0 24 24"
             stroke-width="2"
             stroke="currentColor"
@@ -479,14 +479,14 @@
         <div class="py-[50px] flex flex-col items-center gap-1 mb-[55px]">
           <img class="h-[120px] mb-4" src="./aseets/images/windows_new.png" alt="windows-image">
           <button type="button" class="px-[80px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
-            <i class="fa-solid fa-download"></i>
-            Windows<br>
-            <p class="text-xs mt-2">Windows 8, 10, 11</p>
+            <i class="fa fa-download  mr-3""></i>
+            <span >Windows</span>
+            <p class="text-xs font-light mt-2">Windows 8, 10, 11</p>
           </button>
           <table class="win-downloads">
             <tbody>
               <tr>
-                <td>User Installer</td>
+                <td class="text-sm">User Installer</td>
                 <td>
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
                 </td>
@@ -498,7 +498,7 @@
                 </td>
               </tr>
               <tr>
-                <td>System Installer</td>
+                <td class="text-sm">System Installer</td>
                 <td>
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
                 </td>
@@ -510,7 +510,7 @@
                 </td>
               </tr>
               <tr>
-                <td>.zip</td>
+                <td class="text-sm">.zip</td>
                 <td>
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
                 </td>
@@ -526,22 +526,22 @@
         </div>
         <div class="py-[40px] flex flex-col items-center gap-6 mb-[7px]">
           <img class="h-[100px] w-[100px] mt-5" src="./aseets/images/Ubuntu.png" alt="windows image">
-          <div class="flex flex-row gap-1">
+          <div class="flex flex-row gap-1 ">
             <button type="button" class="px-[30px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
-              <i class="fa-solid fa-download"></i>
-              .deb<br>
+              <i class="fa fa-download mr-3"></i>
+              <span class="text-sm">.deb</span><br>
               <p class="text-xs mt-2">Debian, Ubuntu</p>
             </button>
             <button type="button" class="px-[10px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
-              <i class="fa-solid fa-download"></i>
-              .rpm<br>
+              <i class="fa fa-download mr-3"></i>
+              <span class="text-sm">.rpm</span>
               <p class="text-xs mt-2">Red Hat, Fedora, SUSE</p>
             </button>
           </div>
           <table class="linux-downloads">
             <tbody>
               <tr>
-                <td>.deb</td>
+                <td class="text-sm">.deb</td>
                 <td>
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
                 </td>
@@ -553,7 +553,7 @@
                 </td>
               </tr>
               <tr>
-                <td>.rpm</td>
+                <td class="text-sm">.rpm</td>
                 <td>
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
                 </td>
@@ -565,7 +565,7 @@
                 </td>
               </tr>
               <tr>
-                <td>.tar.gz</td>
+                <td class="text-sm">.tar.gz</td>
                 <td>
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">x64</a>
                 </td>
@@ -577,7 +577,7 @@
                 </td>
               </tr>
               <tr>
-                <td>Snap</td>
+                <td class="text-sm">Snap</td>
                 <td class="snap-button" colspan="3">
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Snap Store</a>
                 </td>
@@ -588,14 +588,14 @@
         <div class="py-[20px] flex flex-col items-center gap-4 mb-[90px]">
           <img class="h-[107px] w-[107px]" src="./aseets/images/icons8-apple-logo-100.png" alt="windows image">
           <button type="button" class="px-[80px] py-[10px] bg-sky-700 text-white text-lg font-medium rounded-none shadow-md hover:bg-sky-800 hover:shadow-lg focus:bg-sky-800 duration-150 ease-in-out">
-            <i class="fa-solid fa-download"></i>
-            Mac<br>
+            <i class="fa fa-download mr-3"></i>
+            <span class="text-sm">Mac</span>
             <p class="text-xs mt-2">macOS 10.11+</p>
           </button>
           <table class="mac-downloads">
             <tbody>
               <tr>
-                <td>.zip</td>
+                <td class="text-sm">.zip</td>
                 <td colspan="2" style="padding-left: 3px">
                   <a class="bg-sky-700 hover:bg-sky-800 cursor-pointer text-white text-sm h-4.5 w-6">Universal</a>
                 </td>
@@ -623,9 +623,9 @@
           </div>
         </div>
         <div class="flex justify-center text-xs mb-4 ">LICENSE AND PRIVACY TERMS</div>
-        <div><p class="text-center text-xs font-light leading-8"> By downloading and using Visual Studio Code, you agree to the <span class="text-sky-800 hover:underline">license terms</span>  and <span class="text-sky-800 hover:underline"> privacy statement.</span> VS Code <br> 
+        <div><p class="text-center text-xs font-light leading-8"> By downloading and using Visual Studio Code, you agree to the <span class="text-sky-800 hover:underline cursor-pointer">license terms</span>  and <span class="text-sky-800 hover:underline cursor-pointer"> privacy statement.</span> VS Code <br> 
           automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not <br>
-           to have this data sent please go see <span class="text-sky-800 hover:underline"> How to Disable Crash Reporting</span> to learn how to disable it.</p></div>
+           to have this data sent please go see <span class="text-sky-800 hover:underline cursor-pointer"> How to Disable Crash Reporting</span> to learn how to disable it.</p></div>
       </section>
 
       <!-------------------- Footer ---------------------->
@@ -643,21 +643,24 @@
           </div>
         </div>
 
-      <div class="flex flex-row w-1/2">
-        <div>
+      <div class="flex flex-row w-1/2 ">
+        <div class="text-xs p-5 hover:text-violet-300 cursor-pointer">
           Support
         </div>
-        <div>
+        <div class="text-xs p-5 hover:text-violet-300 cursor-pointer">
           Privacy
         </div>
-        <div>
+        <div class="text-xs p-5 hover:text-violet-300 cursor-pointer">
           Terms of Use
         </div>
-        <div>
+        <div class="text-xs p-5 hover:text-violet-300 cursor-pointer">
           License
         </div>
-        <div>
-          
+        <div class="py-4">
+          <img src="./aseets/icons/microsoft_blue.png" alt="microsoft" >  
+        </div>
+        <div class=" text-xs py-5 hover:text-violet-300 cursor-pointer">
+          &copy Microsoft
         </div>
       </div>
       </footer>
